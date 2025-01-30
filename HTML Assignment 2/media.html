@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
+    <title>HTML Media</title>
+  </head>
+  <body>
+    <a href="/main.html">Root HTML</a>
+    <!--Heading-->
+    <header>
+      <h2>HTML Media Illustrations - About Me</h2>
+      <!--Using Image Element-->
+      <img
+          src="./MyMedia/Dami.jpg"
+          alt="My picture"
+        />
+      <p id="about">
+        My name is Onifade Danilare Adesikemi,I am an aspiring cloud engineer
+        with a passion for building scalable and efficient cloud solutions.<br />
+        I currently enrolled into Altschool Africa to deepen my expertise in
+        cloud technologies and become an expert.
+      </p>
+    </header>
+    <main>
+      <section>
+        <!--Using Audio Element-->
+        <h3>An audio about me</h3>
+        <audio src="./MyMedia/About Me.m4a" controls></audio>
+
+        <!--Using Video Element-->
+        <h3>This video is just an illustration of what i like doing</h3>
+        <video width="640" height="360" controls>
+          <source src="./MyMedia/Typing.mp4" type="video/mp4" />
+          <p>Your browser doesn't support this video</p>
+        </video>
+      </section>
+      <section>
+        <!--Embedding video from Youtube-->
+        <h3>
+          This is a video about Altschool Africa where I currently learn Cloud
+          Engineering
+        </h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qgnmrPKbk2Q?si=TGOZhoA2BEUNoNm9"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <!--Responsiveness with Picture Element-->
+        <h3>Picture element showing responsiveness</h3>
+        <picture>
+          <source
+            media="(max-width: 799px)"
+            srcset="./MyMedia/moon.jpg"
+            width="400px"
+            height="200px"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="./MyMedia/moon.jpg"
+            width="800px"
+            height="400px"
+          />
+          <img
+            src="./MyMedia/moon.jpg"
+            width="800"
+            height="400"
+            alt="The moon"
+          />
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <h3>Curious about Altschool</h3>
+      <a href="./table.html">Check out Courses offered in Altschool here</a>
+    </footer>
+  </body>
+</html>

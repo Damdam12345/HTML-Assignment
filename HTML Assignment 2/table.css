@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: goldenrod;
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-block-start: 30px;
+}
+th, td {
+    border: 2px solid burlywood; /* Adds a light border */
+    padding: 5px;
+}
+th {
+    width: 50%;
+}
+button {
+    border: 2px solid white;
+   border-radius: 10px;
+   background-color: white;
+   margin-block-start: 10px;
+}
+button > a {
+    text-decoration: none;
+   padding: 7px;
+   color: burlywood;
+   min-width: 153px;
+}
